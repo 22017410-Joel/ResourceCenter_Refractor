@@ -181,7 +181,7 @@ public class ResourceCentreTest {
 		assertNotNull("Check if there is valid chromebook arraylist to add to", chromebookList);
 		ResourceCentre.addChromebook(chromebookList, cb1);
 
-		//error
+		//errorH
 		Boolean isReturned = ResourceCentre.doReturnChromebook(chromebookList, "CB0011");
 		assertFalse("Check that available chromebook CB0011 is returned - false?", isReturned);		
 		//normal
