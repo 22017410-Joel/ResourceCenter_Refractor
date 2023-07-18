@@ -246,16 +246,13 @@ public class ResourceCentre {
 			return false;
 
 		for (int i = 0; i < camcorderList.size(); i++) {
-<<<<<<< HEAD
+
 			String assetTag = camcorderList.get(i).getAssetTag();
 			boolean isAvailable = camcorderList.get(i).getIsAvailable();
 			if (tag.equalsIgnoreCase(assetTag) && isAvailable == true) {
 				
-=======
-			if (tag.equalsIgnoreCase(camcorderList.get(i).getAssetTag())
-					&& camcorderList.get(i).getIsAvailable() == true) {
 
->>>>>>> branch 'master' of https://github.com/22017410-Joel/ResourceCenter_Refractor.git
+
 				camcorderList.get(i).setIsAvailable(false);
 				camcorderList.get(i).setDueDate(dueDate);
 
@@ -277,29 +274,7 @@ public class ResourceCentre {
 		}
 	}
 
-<<<<<<< HEAD
-	public static boolean doLoanChromebook(ArrayList<Chromebook> chromebookList, String tag, String dueDate) {
-		boolean isLoaned = false;
 
-		if (tag.isEmpty() || dueDate.isEmpty())
-			return false;
-		
-		for (int i = 0; i < chromebookList.size(); i++) {
-
-			String assetTag = chromebookList.get(i).getAssetTag();
-			boolean isAvailable = chromebookList.get(i).getIsAvailable();
-			if (tag.equalsIgnoreCase(assetTag) && isAvailable == true) {
-				
-				chromebookList.get(i).setIsAvailable(false);
-				chromebookList.get(i).setDueDate(dueDate);
-				
-				isLoaned = true;
-				
-			}
-		}
-		return isLoaned;
-	}
-=======
 	public static boolean doLoanChromebook(ArrayList<Chromebook> chromebookList, String tag, String dueDate) { 
   boolean isLoaned = false; 
  
@@ -318,7 +293,7 @@ public class ResourceCentre {
   } 
   return isLoaned; 
  }
->>>>>>> branch 'master' of https://github.com/22017410-Joel/ResourceCenter_Refractor.git
+
 
 	public static void loanChromebook(ArrayList<Chromebook> chromebookList) {
 		ResourceCentre.viewAllChromebook(chromebookList);
@@ -340,15 +315,15 @@ public class ResourceCentre {
 		if (tag.isEmpty())
 			return false;
 
-<<<<<<< HEAD
-			String assetTag = camcorderList.get(i).getAssetTag();
-			boolean isAvailable = camcorderList.get(i).getIsAvailable();
-			if (tag.equalsIgnoreCase(assetTag) && isAvailable == true) {	
-=======
+//<<<<<<< HEAD
+//			String assetTag = camcorderList.get(i).getAssetTag();
+//			boolean isAvailable = camcorderList.get(i).getIsAvailable();
+//			if (tag.equalsIgnoreCase(assetTag) && isAvailable == true) {	
+//=======
 		for (int i = 0; i < camcorderList.size(); i++) {
 			if (tag.equalsIgnoreCase(camcorderList.get(i).getAssetTag())
 					&& camcorderList.get(i).getIsAvailable() == false) {
->>>>>>> branch 'master' of https://github.com/22017410-Joel/ResourceCenter_Refractor.git
+//>>>>>>> branch 'master' of https://github.com/22017410-Joel/ResourceCenter_Refractor.git
 				camcorderList.get(i).setIsAvailable(true);
 				camcorderList.get(i).setDueDate("");
 				isReturned = true;
@@ -377,15 +352,15 @@ public class ResourceCentre {
 		if (tag.isEmpty())
 			return false;
 
-<<<<<<< HEAD
-			String assetTag = chromebookList.get(i).getAssetTag();
-			boolean isAvailable = chromebookList.get(i).getIsAvailable();
-			if (tag.equalsIgnoreCase(assetTag) && isAvailable == true) {
-=======
+//<<<<<<< HEAD
+//			String assetTag = chromebookList.get(i).getAssetTag();
+//			boolean isAvailable = chromebookList.get(i).getIsAvailable();
+//			if (tag.equalsIgnoreCase(assetTag) && isAvailable == true) {
+//=======
 		for (int i = 0; i < chromebookList.size(); i++) {
 			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
 					&& chromebookList.get(i).getIsAvailable() == false) {
->>>>>>> branch 'master' of https://github.com/22017410-Joel/ResourceCenter_Refractor.git
+//>>>>>>> branch 'master' of https://github.com/22017410-Joel/ResourceCenter_Refractor.git
 				chromebookList.get(i).setIsAvailable(true);
 				chromebookList.get(i).setDueDate("");
 				isReturned = true;
