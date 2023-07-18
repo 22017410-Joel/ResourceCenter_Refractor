@@ -153,7 +153,7 @@ public class ResourceCentre {
 						camcorderList.get(i).getDueDate(), camcorderList.get(i).getOpticalZoom());
 			}
 
-			output += String.format("%-84s\n", camcorderList.get(i).toString());
+			output += String.format(camcorderList.get(i).toString());
  //github.com/22017410-Joel/ResourceCenter_Refractor.git
 		}
 		return output;
